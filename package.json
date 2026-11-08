@@ -1,0 +1,21 @@
+{
+  "name": "legal-matter-private-delivery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "tsx src/setup_storage.ts",
+    "dev": "tsx src/legal_file_service.ts",
+    "start": "tsx src/legal_file_service.ts",
+    "test": "node --import tsx --test test/deadline_followup.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
